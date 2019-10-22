@@ -27,18 +27,51 @@ body{
     right: 0;
 }
 
+.container{
+    width: 90%;
+    height: 300px;
+    background-color: firebrick;
+    margin: 0 auto;
+}
+
+.section{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: peru;
+    background-color: pink;
+    margin-left: 10px;
+
+}
+
 @media only screen and (max-width: 1920px) {
     body {
       background-color: red;
       color: white;
-
+    }
+    .pixels-text{
+        color: black;     
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     body {
       background-color: black;
       color: white;
-
+      
+    }
+    .pixels-text{
+        color: red;     
+        font-size: 140px;
+    }
+    .section{
+        float: none;
+        margin-left: 0;
+    }
+    .section:hover{
+        background-color: salmon;
+    }
+    .container{
+        width: 100%;
     }
 }
